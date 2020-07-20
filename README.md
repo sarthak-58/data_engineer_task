@@ -59,5 +59,5 @@ python3 app.py
 **Docker commands :**
 ```dockerfile
 $ docker build -t task-app .
-$ docker run -it --rm --name my-running-task task-app
+$ docker run --rm --name container_name -e AWS_ACCESS_KEY_ID="your_key" -e AWS_SECRET_ACCESS_KEY="your_secrt_key" task-app
 ```
